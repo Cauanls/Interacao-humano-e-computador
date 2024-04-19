@@ -7,3 +7,16 @@ function calculoMedia(){
 
     document.getElementById('txtresultado').setAttribute("value", resultado);
 }
+
+function Data(){
+    now = new Date
+    dataAtual = ("Hoje é " + now.getDate() + "/" + now.getMonth() + "/" + now.getFullYear() )
+
+    document.getElementById('dataAtual').setAttribute("value", dataAtual)
+}
+
+function Hora(){
+    now = new Date
+    const hora = ( "Agora são "  + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds())
+    document.getElementById('HoraAtual').setAttribute("value", hora)
+}
